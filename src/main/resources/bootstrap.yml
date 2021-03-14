@@ -1,7 +1,8 @@
-# 스프링 부트 어플리케이션이 가동 될 때, application.yml 보다 먼저 실행되는 설정파일
+server:
+  port: 8089
 spring:
   profiles:
-    active: dev
+    active: real
   application:
     name: config
   cloud:
