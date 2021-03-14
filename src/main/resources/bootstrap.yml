@@ -1,0 +1,14 @@
+# 스프링 부트 어플리케이션이 가동 될 때, application.yml 보다 먼저 실행되는 설정파일
+spring:
+  profiles:
+    active: dev
+  application:
+    name: config
+  cloud:
+    config:
+      uri: http://localhost:8088
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
